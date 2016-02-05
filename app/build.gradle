@@ -1,0 +1,49 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.1"
+
+    defaultConfig {
+        applicationId "com.example.administrator.searchpicturetool"
+        minSdkVersion 15
+        targetSdkVersion 23
+        versionCode 3
+        versionName "1.2"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:23.1.1'
+    compile 'com.android.support:design:23.1.1'
+    //compile 'com.jude:beam:2.4.8'
+    compile 'com.jude:beam:2.6.5'
+    compile 'com.jude:fitsystemwindowlayout:1.0.8'
+    compile 'com.jakewharton:butterknife:6.1.0'
+    compile 'com.jude:requestvolley:1.0.4'
+    compile 'com.google.code.gson:gson:2.3.1'
+    compile 'com.facebook.fresco:fresco:0.5.1'
+    compile 'com.pnikosis:materialish-progress:1.7'
+    compile 'com.jude:utils:1.0.7'
+    compile 'com.yalantis:contextmenu:1.0.4'
+    compile 'com.readystatesoftware.systembartint:systembartint:1.0.3'
+    compile 'com.google.code.gson:gson:2.4'
+    compile 'com.squareup.retrofit2:retrofit:2.0.0-beta3'
+    compile 'com.squareup.retrofit2:converter-gson:2.0.0-beta3'
+    compile 'com.squareup.retrofit2:adapter-rxjava:2.0.0-beta3'
+    compile 'com.squareup.okhttp3:logging-interceptor:3.0.1'
+    compile project(':library')
+    compile project(':umengfamily')
+    compile project(':umeng_sharelibrary')
+    compile files('libs/com.umeng.message.lib_v2.5.0.jar')
+    compile files('libs/YoumiSdk_v5.3.3_2015-09-30.jar')
+}
