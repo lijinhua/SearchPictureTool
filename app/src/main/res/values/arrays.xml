@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="tab">
+        <item>热门推荐</item>
         <item>手机壁纸</item>
         <item>风景</item>
         <item>唯美</item>
@@ -18,6 +19,7 @@
         <item>暴走漫画</item>
     </string-array>
     <string-array name="search_tab">
+        <item>热门推荐</item>
         <item>手机壁纸</item>
         <item>风景</item>
         <item>唯美</item>

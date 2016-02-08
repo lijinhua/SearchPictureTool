@@ -15,7 +15,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 import com.example.administrator.searchpicturetool.R;
-import com.example.administrator.searchpicturetool.presenter.activitPresenter.MainPresenter;
+import com.example.administrator.searchpicturetool.presenter.activitPresenter.MainActivityPresenter;
 import com.example.administrator.searchpicturetool.config.ShareConfig;
 import com.jude.beam.bijection.RequiresPresenter;
 import com.jude.beam.expansion.BeamBaseActivity;
@@ -30,8 +30,8 @@ import butterknife.ButterKnife;
 import butterknife.InjectView;
 import butterknife.OnClick;
 
-@RequiresPresenter(MainPresenter.class)
-public class MainActivity extends BeamBaseActivity<MainPresenter> implements NavigationView.OnNavigationItemSelectedListener {
+@RequiresPresenter(MainActivityPresenter.class)
+public class MainActivity extends BeamBaseActivity<MainActivityPresenter> implements NavigationView.OnNavigationItemSelectedListener {
         @InjectView(R.id.toolbar)
         Toolbar toolbar;
         @InjectView(R.id.search_view)

@@ -13,10 +13,9 @@ import android.view.MenuItem;
 import android.view.View;
 
 import com.example.administrator.searchpicturetool.R;
-import com.example.administrator.searchpicturetool.presenter.activitPresenter.UserPresenter;
+import com.example.administrator.searchpicturetool.presenter.activitPresenter.UserActivityPresenter;
 import com.jude.beam.bijection.RequiresPresenter;
 import com.jude.beam.expansion.BeamBaseActivity;
-import com.jude.utils.JUtils;
 
 import butterknife.ButterKnife;
 import butterknife.InjectView;
@@ -25,8 +24,8 @@ import butterknife.OnClick;
 /**
  * Created by Administrator on 2015/11/12 0012.
  */
-@RequiresPresenter(UserPresenter.class)
-public class UserActivity extends BeamBaseActivity<UserPresenter> implements ViewPager.OnPageChangeListener{
+@RequiresPresenter(UserActivityPresenter.class)
+public class UserActivity extends BeamBaseActivity<UserActivityPresenter> implements ViewPager.OnPageChangeListener{
     @InjectView(R.id.toolbar)
     Toolbar toolbar;
     @InjectView(R.id.tabLayout)

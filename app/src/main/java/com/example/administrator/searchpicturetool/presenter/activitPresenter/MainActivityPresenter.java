@@ -16,7 +16,7 @@ import com.jude.beam.bijection.Presenter;
 /**
  * Created by Administrator on 2015/11/2 0002.
  */
-public class MainPresenter extends Presenter<MainActivity>{
+public class MainActivityPresenter extends Presenter<MainActivity>{
     MyPagerAdapter adapter;
     FragmentManager fragmentManager;
     public int item =1;

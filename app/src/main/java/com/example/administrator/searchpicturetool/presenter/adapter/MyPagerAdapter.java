@@ -9,6 +9,7 @@ import android.view.ViewGroup;
 
 
 import com.example.administrator.searchpicturetool.R;
+import com.example.administrator.searchpicturetool.view.fragment.MainFragment;
 import com.example.administrator.searchpicturetool.view.fragment.NetImgFragment;
 
 import java.util.HashMap;
@@ -23,18 +24,21 @@ public class MyPagerAdapter extends FragmentPagerAdapter {
         super(fm);
         tabs=context.getResources().getStringArray(R.array.tab);
         fragments = new HashMap<String,NetImgFragment>();
-
     }
 
     @Override
     public Fragment getItem(int position) {
-
-        NetImgFragment fragment1 = new NetImgFragment();
-       Bundle bundle = new Bundle();
-        bundle.putInt("tab", position);
-        fragment1.setArguments(bundle);
-        fragments.put(position+"",fragment1);
-        return fragment1;
+        Fragment fragment;
+        if(position==0){
+            fragment = new MainFragment();
+        }else{
+            fragment = new NetImgFragment();
+            Bundle bundle = new Bundle();
+            bundle.putInt("tab", position);
+            fragment.setArguments(bundle);
+            fragments.put(position+"",(NetImgFragment)fragment);
+        }
+        return fragment;
     }
 
     @Override
@@ -45,14 +49,15 @@ public class MyPagerAdapter extends FragmentPagerAdapter {
     @Override
     public CharSequence getPageTitle(int position) {
 
-
        return tabs[position];
     }
 
     @Override
     public void destroyItem(ViewGroup container, int position, Object object) {
         super.destroyItem(container, position, object);
-        fragments.remove(position);
+        if(position!=0){
+            fragments.remove(position);
+        }
 
     }
     public NetImgFragment getFragment(int position){
