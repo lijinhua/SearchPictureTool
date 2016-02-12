@@ -14,8 +14,10 @@ import com.jude.rollviewpager.adapter.LoopPagerAdapter;
  * Created by Administrator on 2016/2/6 0006.
  */
 public class ImageLoopAdapter extends LoopPagerAdapter{
-    private String[] imageUrl={"http://d.hiphotos.baidu.com/image/pic/item/c2cec3fdfc039245d5d7137b8494a4c27d1e2567.jpg"
-    ,"http://g.hiphotos.baidu.com/image/pic/item/a08b87d6277f9e2f697f8f081d30e924b899f36c.jpg"
+    private String[] imageUrl={"http://img1.imgtn.bdimg.com/it/u=3783098954,3739904331&fm=21&gp=0.jpg"
+    ,"http://img0.imgtn.bdimg.com/it/u=1576452016,3706819836&fm=21&gp=0.jpg"
+            ,"http://img0.imgtn.bdimg.com/it/u=2076375700,2476864830&fm=206&gp=0.jpg"
+            ,"http://img3.imgtn.bdimg.com/it/u=3680937390,3514330375&fm=206&gp=0.jpg"
     };
     public ImageLoopAdapter(RollPagerView viewPager) {
         super(viewPager);

@@ -11,7 +11,7 @@ import com.jude.easyrecyclerview.adapter.BaseViewHolder;
 /**
  * Created by Administrator on 2016/2/6 0006.
  */
-public class RecommendTipVewHolder extends BaseViewHolder<Object>{
+public class RecommendTipVewHolder extends BaseViewHolder<RecommendTip>{
     private TextView tip;
     private Button btn;
     public RecommendTipVewHolder(ViewGroup parent) {
@@ -20,11 +20,11 @@ public class RecommendTipVewHolder extends BaseViewHolder<Object>{
     }
 
     @Override
-    public void setData(Object data) {
+    public void setData(RecommendTip data) {
         super.setData(data);
-        if(data instanceof RecommendTip){
+        //if(data instanceof RecommendTip){
             tip.setText(((RecommendTip)data).getTip());
-        }
+       // }
 
     }
 }

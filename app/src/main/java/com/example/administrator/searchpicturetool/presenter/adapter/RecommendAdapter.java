@@ -40,9 +40,9 @@ public class RecommendAdapter extends RecyclerArrayAdapter<Object>{
 
     @Override
     public int getViewType(int position) {
-        if(getItem(position) instanceof RecommendTip) return  tip;
-        if(getItem(position) instanceof RecommendContent) return  content;
-
+        if(getItem(position) instanceof RecommendContent){
+            return  content;
+        } else if(getItem(position) instanceof RecommendTip) return  tip;
        /* if(position==0){
 
         }

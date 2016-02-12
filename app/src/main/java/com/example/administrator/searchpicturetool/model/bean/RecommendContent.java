@@ -3,7 +3,7 @@ package com.example.administrator.searchpicturetool.model.bean;
 /**
  * Created by Administrator on 2016/2/7 0007.
  */
-public class RecommendContent {
+public class RecommendContent extends RecommendTip{
     private String imgUrl1;
     private String imgUrl2;
     private String title1;
@@ -11,7 +11,8 @@ public class RecommendContent {
     private String content1;
     private String content2;
 
-    public RecommendContent(String imgUrl1, String title1, String content1,String imgUrl2,String title2,String content2) {
+    public RecommendContent(double type,String imgUrl1, String title1, String content1,String imgUrl2,String title2,String content2) {
+        super(type);
         this.imgUrl1 = imgUrl1;
         this.title2 = title2;
         this.title1 = title1;
