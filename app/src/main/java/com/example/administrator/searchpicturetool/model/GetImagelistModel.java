@@ -17,6 +17,7 @@ public class GetImagelistModel {
                 .map(new Func1<SosoSearcher.SosoImage.WallImageResult, NetImage[]>() {
                     @Override
                     public NetImage[] call(SosoSearcher.SosoImage.WallImageResult wallImageResult) {
+
                         return wallImageResult.getData();
                     }
                 }).subscribeOn(Schedulers.io()).observeOn(AndroidSchedulers.mainThread());

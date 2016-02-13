@@ -2,6 +2,7 @@
 <resources>
     <string-array name="tab">
         <item>热门推荐</item>
+        <item>每日一笑</item>
         <item>手机壁纸</item>
         <item>风景</item>
         <item>唯美</item>
@@ -20,6 +21,7 @@
     </string-array>
     <string-array name="search_tab">
         <item>热门推荐</item>
+        <item>每日一笑</item>
         <item>手机壁纸</item>
         <item>风景</item>
         <item>唯美</item>

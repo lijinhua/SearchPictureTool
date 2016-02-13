@@ -26,7 +26,7 @@ import java.util.HashMap;
 /**
  * Created by Administrator on 2016/2/5 0005.
  */
-public class MainFragmentPresenter extends Presenter<MainFragment> implements SwipeRefreshLayout.OnRefreshListener, RecyclerArrayAdapter.OnItemClickListener {
+public class MainFragmentPresenter extends Presenter<MainFragment> implements SwipeRefreshLayout.OnRefreshListener{
     private RecommendAdapter adapter;
     @Override
     protected void onCreateView(MainFragment view) {
@@ -42,26 +42,8 @@ public class MainFragmentPresenter extends Presenter<MainFragment> implements Sw
     @Override
     public void onRefresh() {
         adapter.clear();
-        /*RecommendTip tip = new RecommendTip(0,"热门搜索");
-        RecommendContent content = new RecommendContent(0.1,
-                "http://d.hiphotos.baidu.com/image/pic/item/c2cec3fdfc039245d5d7137b8494a4c27d1e2567.jpg"
-                ,"title1","content1"
-                ,"http://g.hiphotos.baidu.com/image/pic/item/a08b87d6277f9e2f697f8f081d30e924b899f36c.jpg"
-                ,"title2","content2"
-                );
-        ArrayList items = new ArrayList();
-        items.add(tip);
-        items.add(content);
-        items.add(content);*/
         adapter.addAll(RecommendModel.getRecommends());
-        adapter.setOnItemClickListener(this);
-    }
-
-    @Override
-    public void onItemClick(int position) {
-        if(adapter.getItem(position) instanceof RecommendContent){
-
-        }
 
     }
+
 }

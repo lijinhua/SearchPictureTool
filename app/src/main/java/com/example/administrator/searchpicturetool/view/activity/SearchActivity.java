@@ -2,7 +2,9 @@ package com.example.administrator.searchpicturetool.view.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.design.widget.AppBarLayout;
 import android.support.design.widget.CollapsingToolbarLayout;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.FragmentManager;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
@@ -29,6 +31,10 @@ public class SearchActivity extends BeamBaseActivity<SearchActivityPresenter>{
     Toolbar toolbar;
     @InjectView(R.id.collapsingToolbarLayout)
     CollapsingToolbarLayout collapsingToolbarLayout;
+    @InjectView(R.id.search_fab)
+    FloatingActionButton fab;
+    @InjectView(R.id.appbar)
+    AppBarLayout appBarLayout;
     FragmentManager manager;
     private SearchFragment searchFragment;
     @Override
@@ -43,8 +49,20 @@ public class SearchActivity extends BeamBaseActivity<SearchActivityPresenter>{
        searchFragment = new SearchFragment();
         searchFragment.setArguments(getIntent().getBundleExtra("search"));
         manager.beginTransaction().replace(R.id.search_container,searchFragment).commit();
+        initAppBarSetting();
 
-
+    }
+    public void initAppBarSetting(){
+        appBarLayout.addOnOffsetChangedListener(new AppBarLayout.OnOffsetChangedListener() {
+            @Override
+            public void onOffsetChanged(AppBarLayout appBarLayout, int i) {
+                if (i == 0) {
+                    fab.hide();
+                } else {
+                    fab.show();
+                }
+            }
+        });
     }
     @OnClick(R.id.search_fab)
     public void clickFab(View view){

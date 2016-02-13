@@ -10,6 +10,7 @@ import java.util.Random;
  * Created by Administrator on 2015/11/3 0003.
  */
 public class SearchActivityPresenter extends Presenter<SearchActivity>{
+
     private int[] bgImgs ={
             R.drawable.bg_1,
             R.drawable.bg_2,
@@ -24,6 +25,7 @@ public class SearchActivityPresenter extends Presenter<SearchActivity>{
     public int getBgImg(){
         return bgImgs[new Random().nextInt(bgImgs.length)];
     }
+
     public void gotoUp(int position){
         getView().getSearchFragment().getListView().scrollToPosition(position);
     }

@@ -27,6 +27,7 @@ public class NetImgFragment extends BeamListFragment<NetImgListPresenter,NetImag
                     .setContainerErrorAble(true)
                     .setContainerErrorRes(R.layout.view_net_error)
                     .setContainerProgressRes(R.layout.page_progress)
+                    .setContainerEmptyRes(R.layout.view_empty)
                     .setLoadMoreRes(R.layout.page_loadmore);
         }
     @Override

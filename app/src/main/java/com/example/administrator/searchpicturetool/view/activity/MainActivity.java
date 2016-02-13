@@ -3,6 +3,7 @@ package com.example.administrator.searchpicturetool.view.activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.AppBarLayout;
+import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
 import android.view.View;
@@ -15,6 +16,8 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 import com.example.administrator.searchpicturetool.R;
+import com.example.administrator.searchpicturetool.model.ImageJoyModel;
+import com.example.administrator.searchpicturetool.model.bean.ImageJoy;
 import com.example.administrator.searchpicturetool.presenter.activitPresenter.MainActivityPresenter;
 import com.example.administrator.searchpicturetool.config.ShareConfig;
 import com.jude.beam.bijection.RequiresPresenter;
@@ -26,9 +29,12 @@ import com.umeng.message.PushAgent;
 import com.umeng.update.UmengUpdateAgent;
 
 
+import java.util.ArrayList;
+
 import butterknife.ButterKnife;
 import butterknife.InjectView;
 import butterknife.OnClick;
+import rx.Subscriber;
 
 @RequiresPresenter(MainActivityPresenter.class)
 public class MainActivity extends BeamBaseActivity<MainActivityPresenter> implements NavigationView.OnNavigationItemSelectedListener {
@@ -46,6 +52,8 @@ public class MainActivity extends BeamBaseActivity<MainActivityPresenter> implem
         ViewPager viewPager;
     @InjectView(R.id.appBarLayout)
     AppBarLayout appBarLayout;
+    @InjectView(R.id.fab)
+    FloatingActionButton fab;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -59,6 +67,7 @@ public class MainActivity extends BeamBaseActivity<MainActivityPresenter> implem
         initPush();
         UmengUpdateAgent.forceUpdate(this);
         navigationView.setCheckedItem(R.id.nav_main);
+
 
     }
     public void initPush(){
@@ -102,13 +111,16 @@ public class MainActivity extends BeamBaseActivity<MainActivityPresenter> implem
             @Override
             public void onOffsetChanged(AppBarLayout appBarLayout, int i) {
                 MainActivity.this.getPresenter().stopRefresh(i);
+                if(i!=0){
+                    fab.hide();
+                }else{
+                    fab.show();
+                }
             }
         });
     }
     @OnClick(R.id.fab)
     public void clickFab(View view){
-       /* Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                .setAction("Action", null).show();*/
         getPresenter().goToUp(0);
     }
     public void openShare(){
@@ -160,13 +172,10 @@ public class MainActivity extends BeamBaseActivity<MainActivityPresenter> implem
             }*/
         } else if (id == R.id.nav_search) {
             searchView.showSearch();
-            item.setChecked(false);
         } else if (id == R.id.nav_user) {
             startActivity(new Intent(this, UserActivity.class));
-            item.setChecked(false);
         } else if (id == R.id.nav_setting) {
             startActivity(new Intent(this, SettingActivity.class));
-            item.setChecked(false);
         } else if (id == R.id.nav_share) {
             openShare();
         } else if (id == R.id.nav_send) {
@@ -174,7 +183,6 @@ public class MainActivity extends BeamBaseActivity<MainActivityPresenter> implem
             agent.startFeedbackActivity();
         }
         drawer.closeDrawer(GravityCompat.START);
-        navigationView.setCheckedItem(R.id.nav_main);
         return true;
     }
 

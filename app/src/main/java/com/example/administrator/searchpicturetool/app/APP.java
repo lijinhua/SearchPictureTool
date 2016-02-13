@@ -32,7 +32,7 @@ public class APP extends Application{
         });
         Fresco.initialize(this);
         RequestManager.getInstance().init(this);
-        RequestManager.getInstance().setDebugMode(true, "app_response");
+        RequestManager.getInstance().setDebugMode(true, "heheda");
         JUtils.initialize(this);
         JUtils.setDebug(true, "heheda");
         JFileManager.getInstance().init(this,Dir.values());

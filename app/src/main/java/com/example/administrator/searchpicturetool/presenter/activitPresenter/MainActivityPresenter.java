@@ -11,7 +11,9 @@ import com.example.administrator.searchpicturetool.presenter.adapter.UserPagerAd
 import com.example.administrator.searchpicturetool.view.activity.MainActivity;
 import com.example.administrator.searchpicturetool.presenter.adapter.MyPagerAdapter;
 import com.example.administrator.searchpicturetool.view.activity.UserActivity;
+import com.example.administrator.searchpicturetool.view.fragment.MainFragment;
 import com.jude.beam.bijection.Presenter;
+import com.jude.beam.expansion.list.BeamListFragment;
 
 /**
  * Created by Administrator on 2015/11/2 0002.
@@ -37,11 +39,20 @@ public class MainActivityPresenter extends Presenter<MainActivity>{
 
         }
     public void goToUp(int position){
-        adapter.getFragment(getView().getViewPager().getCurrentItem()).getListView().scrollToPosition(position);
+
+        if(adapter.getFragment(getView().getViewPager().getCurrentItem())!=null){
+            if(getView().getViewPager().getCurrentItem()==0){
+                ((MainFragment)adapter.getFragment(0)).recyclerView.scrollToPosition(position);
+            }else{
+                ((BeamListFragment)adapter.getFragment((getView().getViewPager().getCurrentItem()))).getListView().scrollToPosition(position);
+            }
+
+        }
+
     }
     public void stopRefresh(int i){
-        if(adapter.getFragment(getView().getViewPager().getCurrentItem())!=null)
-        adapter.getFragment(getView().getViewPager().getCurrentItem()).getListView().getSwipeToRefresh().setEnabled(i == 0);
+        if(getView().getViewPager().getCurrentItem()!=0&&adapter.getFragment(getView().getViewPager().getCurrentItem())!=null)
+            ((BeamListFragment)adapter.getFragment((getView().getViewPager().getCurrentItem()))).getListView().getSwipeToRefresh().setEnabled(i == 0);
     }
 
 }
