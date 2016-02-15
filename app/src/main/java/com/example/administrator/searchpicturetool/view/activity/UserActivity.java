@@ -45,7 +45,8 @@ public class UserActivity extends BeamBaseActivity<UserActivityPresenter> implem
         tabLayout.setSelectedTabIndicatorColor(getResources().getColor(R.color.white));
         tabLayout.setTabMode(TabLayout.MODE_FIXED);
         initAppBarSetting();
-        fab.setVisibility(View.GONE);
+     //   fab.setVisibility(View.GONE);
+        fab.hide();
         viewPager.addOnPageChangeListener(this);
     }
 
@@ -68,17 +69,18 @@ public class UserActivity extends BeamBaseActivity<UserActivityPresenter> implem
             finish();
             return true;
         }
-        fab.setVisibility(View.VISIBLE);
+       // fab.setVisibility(View.VISIBLE);
+        fab.show();
         switch (id){
             case R.id.action_delete:
                 getPresenter().transaction=0;
                 break;
-            case R.id.action_setting:
+            /*case R.id.action_setting:
                 getPresenter().transaction=1;
                 break;
             case R.id.action_share:
                 getPresenter().transaction=2;
-                break;
+                break;*/
         }
         getPresenter().beginSelectImgs();
         showSnackbar();
@@ -95,7 +97,8 @@ public class UserActivity extends BeamBaseActivity<UserActivityPresenter> implem
     }
     @OnClick(R.id.fab)
     public void beginTransaction(){
-        fab.setVisibility(View.GONE);
+       // fab.setVisibility(View.GONE);
+        fab.hide();
         getPresenter().beginTransaction();
     }
 

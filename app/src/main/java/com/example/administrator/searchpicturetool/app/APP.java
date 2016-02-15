@@ -11,6 +11,8 @@ import com.jude.http.RequestManager;
 import com.jude.utils.JFileManager;
 import com.jude.utils.JUtils;
 
+import cn.bmob.v3.Bmob;
+
 /**
  * Created by Administrator on 2015/11/2 0002.
  */
@@ -31,11 +33,12 @@ public class APP extends Application{
             }
         });
         Fresco.initialize(this);
-        RequestManager.getInstance().init(this);
-        RequestManager.getInstance().setDebugMode(true, "heheda");
+      /*  RequestManager.getInstance().init(this);
+        RequestManager.getInstance().setDebugMode(true, "heheda");*/
+        Bmob.initialize(this,"633edd745d4d8630d88c73a16440cb9a");
         JUtils.initialize(this);
-        JUtils.setDebug(true, "heheda");
-        JFileManager.getInstance().init(this,Dir.values());
+        JUtils.setDebug(false, "heheda");
+        //JFileManager.getInstance().init(this,Dir.values());
     }
     public enum Dir{
         Image,Text,Object,

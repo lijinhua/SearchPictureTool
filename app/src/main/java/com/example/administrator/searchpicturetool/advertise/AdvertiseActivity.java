@@ -9,6 +9,7 @@ import net.youmi.android.offers.OffersManager;
 
 /**
  * Created by Administrator on 2016/1/18 0018.
+ * @deprecated
  */
 public class AdvertiseActivity extends AppCompatActivity{
     @Override

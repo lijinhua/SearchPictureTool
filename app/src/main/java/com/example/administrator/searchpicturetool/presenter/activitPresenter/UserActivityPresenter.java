@@ -7,6 +7,7 @@ import com.example.administrator.searchpicturetool.model.SqlModel;
 import com.example.administrator.searchpicturetool.presenter.adapter.UserPagerAdapter;
 import com.example.administrator.searchpicturetool.view.activity.UserActivity;
 import com.jude.beam.bijection.Presenter;
+import com.jude.utils.JUtils;
 
 import rx.functions.Action1;
 
@@ -96,6 +97,12 @@ public class UserActivityPresenter extends Presenter<UserActivity> {
         });
     }
     public void transactionEnd(){
+        if(transaction==1){
+            JUtils.Toast("每日壁纸正在赶工中...");
+        }
+        if(transaction==2){
+            JUtils.Toast("批量分享正在赶工中...");
+        }
         isTransactioning=false;
         DownloadImgSelected.getSelectedImgs().clear();
         CollectImgSelected.getSelectedImgs().clear();

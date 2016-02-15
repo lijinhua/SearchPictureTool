@@ -9,6 +9,7 @@
         android:id="@+id/easy_recyclerview"
         android:layout_width="match_parent"
         android:scrollbars="none"
+        app:layout_progress="@layout/page_progress"
         android:layout_height="match_parent">
 
     </com.jude.easyrecyclerview.EasyRecyclerView>

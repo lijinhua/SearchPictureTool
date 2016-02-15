@@ -1,1 +1,1 @@
-include ':app', ':library', ':umengfamily', ':umeng_sharelibrary', ':ImageSlider'
+include ':app', ':library', ':umengfamily', ':umeng_sharelibrary'

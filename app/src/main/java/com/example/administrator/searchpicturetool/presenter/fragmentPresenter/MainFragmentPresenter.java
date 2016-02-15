@@ -17,11 +17,14 @@ import com.jude.beam.bijection.Presenter;
 import com.jude.beam.expansion.data.BeamDataFragment;
 import com.jude.easyrecyclerview.adapter.RecyclerArrayAdapter;
 import com.jude.rollviewpager.hintview.TextHintView;
+import com.jude.utils.JUtils;
 
 import org.w3c.dom.Text;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+
+import rx.Subscriber;
 
 /**
  * Created by Administrator on 2016/2/5 0005.
@@ -33,7 +36,7 @@ public class MainFragmentPresenter extends Presenter<MainFragment> implements Sw
         super.onCreateView(view);
         adapter = new RecommendAdapter(getView().getContext());
         getView().recyclerView.setLayoutManager(new LinearLayoutManager(getView().getContext()));
-        getView().recyclerView.setAdapter(adapter);
+        getView().recyclerView.setAdapterWithProgress(adapter);
         adapter.addHeader(new RollViewPagerItemView(getView().recyclerView.getSwipeToRefresh()));
         getView().recyclerView.setRefreshListener(this);
         onRefresh();
@@ -41,8 +44,26 @@ public class MainFragmentPresenter extends Presenter<MainFragment> implements Sw
 
     @Override
     public void onRefresh() {
-        adapter.clear();
-        adapter.addAll(RecommendModel.getRecommends());
+     //   adapter.addAll(RecommendModel.getRecommends());
+        RecommendModel.getRecommends2(getView().getContext(), new Subscriber<ArrayList<Object>>() {
+            @Override
+            public void onCompleted() {
+
+            }
+
+            @Override
+            public void onError(Throwable e) {
+                JUtils.Toast("网络不给力");
+                getView().recyclerView.showError();
+                getView().recyclerView.getSwipeToRefresh().setRefreshing(false);
+            }
+
+            @Override
+            public void onNext(ArrayList<Object> objects) {
+                adapter.clear();
+                adapter.addAll(objects);
+            }
+        });
 
     }
 

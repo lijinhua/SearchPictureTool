@@ -26,6 +26,7 @@ public class MainFragment extends BeamFragment<MainFragmentPresenter>{
        View view = inflater.inflate(R.layout.fragment_main,null);
      //   mRollPagerView =(RollPagerView)view.findViewById(R.id.roll_view_pager);
         recyclerView = (EasyRecyclerView)view.findViewById(R.id.easy_recyclerview);
+        recyclerView.setErrorView(R.layout.view_net_error);
         return view;
     }
 }
