@@ -12,6 +12,7 @@ import com.example.administrator.searchpicturetool.model.SaveBitmapModel;
 import com.example.administrator.searchpicturetool.model.SqlModel;
 import com.example.administrator.searchpicturetool.model.WrapperModel;
 import com.example.administrator.searchpicturetool.model.bean.NetImage;
+import com.example.administrator.searchpicturetool.util.Utils;
 import com.example.administrator.searchpicturetool.view.activity.ShowLargeImgActivity;
 import com.example.administrator.searchpicturetool.presenter.adapter.ShowLargeImgAdapter;
 import com.facebook.common.executors.CallerThreadExecutor;
@@ -70,7 +71,6 @@ public class ShowLargeImgActivityPresenter extends Presenter<ShowLargeImgActivit
         }
         mNetImages.add(netImages.get(currentPosition));
         folder.writeObjectToFile(mNetImages, "netImages");*/
-      //  getView().setHasCollected(true);
 
     }
     public void requestCollectPicture(){
@@ -145,7 +145,10 @@ public class ShowLargeImgActivityPresenter extends Presenter<ShowLargeImgActivit
                     //保存到数据库
                     SqlModel.addDownloadImg(getView(),netImages.get(currentPosition),path);
                 }
-                if(state==1) startShareImg(path);
+                if(state==1){
+                   // startShareImg(path);
+                    Utils.startShareImg(path,getView());
+                }
             }else{
                 JUtils.Toast("未知错误");
             }
@@ -162,13 +165,13 @@ public class ShowLargeImgActivityPresenter extends Presenter<ShowLargeImgActivit
             }
         }
     };
-    private void startShareImg(String path){
+  /*  private void startShareImg(String path){
         Intent shareIntent = new Intent(Intent.ACTION_SEND);
-        shareIntent.setType("image/*");
+        shareIntent.setType("image*//*");
         File file = new File(path);
         Uri uri = Uri.fromFile(file);
         shareIntent.putExtra(Intent.EXTRA_STREAM, uri);
         getView().startActivity(Intent.createChooser(shareIntent, "请选择"));
-    }
+    }*/
 
 }

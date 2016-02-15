@@ -1,4 +1,7 @@
 package com.example.administrator.searchpicturetool.util;
+import android.content.Context;
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Environment;
 import com.example.administrator.searchpicturetool.app.APP;
 import java.io.File;
@@ -20,5 +23,14 @@ public class Utils {
         return sdDir.toString();
     }
 
+    //分享图片
+    public  static void  startShareImg(String path,Context context){
+        Intent shareIntent = new Intent(Intent.ACTION_SEND);
+        shareIntent.setType("image/*");
+        File file = new File(path);
+        Uri uri = Uri.fromFile(file);
+        shareIntent.putExtra(Intent.EXTRA_STREAM, uri);
+        context.startActivity(Intent.createChooser(shareIntent, "请选择"));
+    }
 
 }

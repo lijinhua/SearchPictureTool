@@ -11,6 +11,7 @@ import android.widget.ImageView;
 
 import com.example.administrator.searchpicturetool.R;
 import com.example.administrator.searchpicturetool.model.bean.DownloadImg;
+import com.example.administrator.searchpicturetool.widght.PhotoView;
 import com.facebook.drawee.view.SimpleDraweeView;
 import com.jude.utils.JUtils;
 
@@ -57,9 +58,15 @@ public class ShowDownloadLargeImgAdapter extends PagerAdapter{
         view = inflater.inflate(R.layout.item_large_img, null);
         simpleDraweeView = (SimpleDraweeView) view.findViewById(R.id.photoView);
         mLayoutParams = simpleDraweeView.getLayoutParams();
-        float mHeight = ((float) (downloadImgs.get(position).getHeight()) / ((float) (downloadImgs.get(position).getWidth()))) * screenWidth;
-        mLayoutParams.width = screenWidth;
-        mLayoutParams.height = (int) mHeight;
+        if(downloadImgs.get(position).getHeight()<=downloadImgs.get(position).getWidth()){
+            float mHeight = ((float) (downloadImgs.get(position).getHeight()) / ((float) (downloadImgs.get(position).getWidth()))) * screenWidth;
+            mLayoutParams.width = screenWidth;
+            mLayoutParams.height = (int)mHeight;
+        }else{
+            float mWidth =((float) (downloadImgs.get(position).getWidth()) / ((float) (downloadImgs.get(position).getHeight()))) * screenHeight;
+            mLayoutParams.height = screenHeight;
+            mLayoutParams.width = (int)mWidth;
+        }
         simpleDraweeView.setLayoutParams(mLayoutParams);
         simpleDraweeView.setImageURI(Uri.fromFile(new File(downloadImgs.get(position).getName())));
      //   simpleDraweeView.setImageBitmap(BitmapFactory.decodeFile(downloadImgs.get(position).getName()));

@@ -4,6 +4,7 @@
     android:layout_height="wrap_content"
     android:layout_margin="8dp"
     app:cardCornerRadius="2dp"
+    android:clickable="true"
     android:foreground="?selectableItemBackground"
     xmlns:app="http://schemas.android.com/apk/res-auto">
         <com.jude.rollviewpager.RollPagerView
@@ -13,7 +14,8 @@
             app:rollviewpager_hint_color="#7c7c7c"
             app:rollviewpager_hint_gravity="left"
             app:rollviewpager_hint_alpha="70"
-            app:rollviewpager_play_delay="3000"/>
+            android:layout_marginBottom="2dp"
+            app:rollviewpager_play_delay="3500"/>
 
 
 </android.support.v7.widget.CardView>

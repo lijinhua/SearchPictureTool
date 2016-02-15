@@ -9,6 +9,18 @@ public class NetImageImpl extends NetImage{
     private int thumb_width;
     private int thumb_height;
 
+    public NetImageImpl() {
+    }
+
+    public NetImageImpl(String thumbUrl, String largeUrl, int thumb_width, int thumb_height) {
+        this.thumbUrl = thumbUrl;
+        this.largeUrl = largeUrl;
+        this.thumb_width = thumb_width;
+        this.thumb_height = thumb_height;
+    }
+
+
+
     public void setLargeUrl(String largeUrl) {
         this.largeUrl = largeUrl;
     }

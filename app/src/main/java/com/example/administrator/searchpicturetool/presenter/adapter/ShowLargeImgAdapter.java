@@ -58,9 +58,19 @@ public  class ShowLargeImgAdapter extends PagerAdapter {
         simpleDraweeView = (SimpleDraweeView) view.findViewById(R.id.photoView);
         mLayoutParams = simpleDraweeView.getLayoutParams();
         if (netImages.get(position).getWidth() != 0 && netImages.get(position).getHeight() != 0) {
-            float mHeight = ((float) (netImages.get(position).getHeight()) / ((float) (netImages.get(position).getWidth()))) * screenWidth;
+           /* float mHeight = ((float) (netImages.get(position).getHeight()) / ((float) (netImages.get(position).getWidth()))) * screenWidth;
                 mLayoutParams.width = screenWidth;
-                mLayoutParams.height = (int) mHeight;
+                mLayoutParams.height = (int) mHeight;*/
+            if(netImages.get(position).getHeight()<=netImages.get(position).getWidth()){
+                float mHeight = ((float) (netImages.get(position).getHeight()) / ((float) (netImages.get(position).getWidth()))) * screenWidth;
+                mLayoutParams.width = screenWidth;
+                mLayoutParams.height = (int)mHeight;
+            }else{
+                float mWidth =((float) (netImages.get(position).getWidth()) / ((float) (netImages.get(position).getHeight()))) * screenHeight;
+                mLayoutParams.height = screenHeight;
+                mLayoutParams.width = (int)mWidth;
+            }
+
                 simpleDraweeView.setLayoutParams(mLayoutParams);
 
         }else{
