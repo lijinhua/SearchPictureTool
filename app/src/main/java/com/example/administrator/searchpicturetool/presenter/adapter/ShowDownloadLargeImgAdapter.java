@@ -58,7 +58,7 @@ public class ShowDownloadLargeImgAdapter extends PagerAdapter{
         view = inflater.inflate(R.layout.item_large_img, null);
         simpleDraweeView = (SimpleDraweeView) view.findViewById(R.id.photoView);
         mLayoutParams = simpleDraweeView.getLayoutParams();
-        if(downloadImgs.get(position).getHeight()<=downloadImgs.get(position).getWidth()){
+        if(downloadImgs.get(position).getHeight()<=downloadImgs.get(position).getWidth()*2){
             float mHeight = ((float) (downloadImgs.get(position).getHeight()) / ((float) (downloadImgs.get(position).getWidth()))) * screenWidth;
             mLayoutParams.width = screenWidth;
             mLayoutParams.height = (int)mHeight;

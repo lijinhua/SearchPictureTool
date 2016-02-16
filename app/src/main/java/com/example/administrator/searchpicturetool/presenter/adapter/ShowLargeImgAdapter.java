@@ -61,7 +61,7 @@ public  class ShowLargeImgAdapter extends PagerAdapter {
            /* float mHeight = ((float) (netImages.get(position).getHeight()) / ((float) (netImages.get(position).getWidth()))) * screenWidth;
                 mLayoutParams.width = screenWidth;
                 mLayoutParams.height = (int) mHeight;*/
-            if(netImages.get(position).getHeight()<=netImages.get(position).getWidth()){
+            if(netImages.get(position).getHeight()<=netImages.get(position).getWidth()*2){
                 float mHeight = ((float) (netImages.get(position).getHeight()) / ((float) (netImages.get(position).getWidth()))) * screenWidth;
                 mLayoutParams.width = screenWidth;
                 mLayoutParams.height = (int)mHeight;

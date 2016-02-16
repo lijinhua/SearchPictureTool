@@ -48,6 +48,5 @@ dependencies {
     compile project(':umengfamily')
     compile project(':umeng_sharelibrary')
     compile files('libs/com.umeng.message.lib_v2.5.0.jar')
-    compile files('libs/YoumiSdk_v5.3.3_2015-09-30.jar')
     compile files('libs/BmobSDK_V3.4.5_1111.jar')
 }
