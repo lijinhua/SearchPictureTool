@@ -3,6 +3,8 @@
 
 Material Design风格，热门推荐、每日一笑、一键下载图片、分享图片、收藏图片、设为桌面壁纸、设为锁屏壁纸。
 
+#Screenshot
+
 ![1](https://github.com/wenhuaijun/SearchPictureTool/blob/master/introduce/intro1.jpg "")
 ![2](https://github.com/wenhuaijun/SearchPictureTool/blob/master/introduce/intro2.jpg "")
 ![3](https://github.com/wenhuaijun/SearchPictureTool/blob/master/introduce/intro3.jpg "")
@@ -19,7 +21,13 @@ Material Design风格，热门推荐、每日一笑、一键下载图片、分�
 
 豌豆荚市场：http://www.wandoujia.com/apps/com.example.administrator.searchpicturetool
 
+#dependencies
 
+
+
+#API
+搜索图片接口：通过抓包抓到的接口，由于版权问题不好直接公布，请clone项目后在项目中查找
+搞笑图片接口：http://www.laifudao.com/api.asp
 #License#
 
 Copyright 2016 wenhuaijun
