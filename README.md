@@ -1,4 +1,3 @@
-# SearchPictureTool
 #图片搜索APP——美图秀
 
 Material Design风格，热门推荐、每日一笑、一键下载图片、分享图片、收藏图片、设为桌面壁纸、设为锁屏壁纸。
@@ -23,12 +22,24 @@ Material Design风格，热门推荐、每日一笑、一键下载图片、分�
 
 #dependencies
 
+###- [Material Design 官方支持库] 学习  http://www.jianshu.com/p/1078568e859f
+###- [响应式编程框架 Rxjava]  https://github.com/ReactiveX/RxJava  http://gank.io/post/560e15be2dca930e00da1083
+###- [网络请求库 retrofit]   https://github.com/square/retrofit
+###- [强大的图片加载组件 fresco]  http://www.fresco-cn.org/
 
+##以下是好朋友Jude写的快速开发库，亲测好用，强烈推荐给大家
+
+###- [Beam——MVP快速开发框架]  https://github.com/Jude95/Beam
+
+###- [EasyRecyclerView]  https://github.com/Jude95/EasyRecyclerView
+
+###- [工具库]  https://github.com/Jude95/Utils
 
 #API
 搜索图片接口：通过抓包抓到的接口，由于版权问题不好直接公布，请clone项目后在项目中查找
 
 搞笑图片接口：http://www.laifudao.com/api.asp
+
 #License#
 
 Copyright 2016 wenhuaijun
