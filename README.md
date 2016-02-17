@@ -1,6 +1,6 @@
 # SearchPictureTool
 一款图片搜索APP
-Material Design风格，一键下载图片、分享图片、收藏图片、设为桌面壁纸、设为锁屏壁纸。
+Material Design风格，热门推荐、每日一笑、一键下载图片、分享图片、收藏图片、设为桌面壁纸、设为锁屏壁纸。
 
 ![1](https://github.com/wenhuaijun/SearchPictureTool/blob/master/introduce/intro1.jpg "")
 ![2](https://github.com/wenhuaijun/SearchPictureTool/blob/master/introduce/intro2.jpg "")
@@ -10,8 +10,8 @@ Material Design风格，一键下载图片、分享图片、收藏图片、设�
 ![5](https://github.com/wenhuaijun/SearchPictureTool/blob/master/introduce/intro5.jpg "")
 ![6](https://github.com/wenhuaijun/SearchPictureTool/blob/master/introduce/intro6.jpg "")
 
-![7](https://github.com/wenhuaijun/SearchPictureTool/blob/master/introduce/intro6.jpg "")
-![8](https://github.com/wenhuaijun/SearchPictureTool/blob/master/introduce/intro6.jpg "")
+![7](https://github.com/wenhuaijun/SearchPictureTool/blob/master/introduce/intro7.jpg "")
+![8](https://github.com/wenhuaijun/SearchPictureTool/blob/master/introduce/intro8.jpg "")
 
 
 
