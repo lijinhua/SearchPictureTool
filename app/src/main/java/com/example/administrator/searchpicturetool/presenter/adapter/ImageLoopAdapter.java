@@ -19,7 +19,7 @@ import com.jude.utils.JUtils;
 import java.util.List;
 
 /**
- * Created by Administrator on 2016/2/6 0006.
+ * Created by wenhuaijun on 2016/2/6 0006.
  */
 public class ImageLoopAdapter extends DynamicPagerAdapter {
     /*private String[] imageUrl={"http://img1.imgtn.bdimg.com/it/u=3783098954,3739904331&fm=21&gp=0.jpg"

@@ -7,7 +7,7 @@ import com.jude.beam.bijection.Presenter;
 import java.util.Random;
 
 /**
- * Created by Administrator on 2015/11/3 0003.
+ * Created by wenhuaijun on 2015/11/3 0003.
  */
 public class SearchActivityPresenter extends Presenter<SearchActivity>{
 

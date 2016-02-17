@@ -3,7 +3,7 @@ package com.example.administrator.searchpicturetool.model.bean;
 import cn.bmob.v3.BmobObject;
 
 /**
- * Created by Administrator on 2016/2/15 0015.
+ * Created by wenhuaijun on 2016/2/15 0015.
  */
 public class Banner extends BmobObject{
     private String introduce;

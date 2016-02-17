@@ -14,7 +14,7 @@ import com.jude.utils.JUtils;
 import cn.bmob.v3.Bmob;
 
 /**
- * Created by Administrator on 2015/11/2 0002.
+ * Created by wenhuaijun on 2015/11/2 0002.
  */
 public class APP extends Application{
     public  static APP instance;

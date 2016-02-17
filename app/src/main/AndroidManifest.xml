@@ -55,7 +55,7 @@
             android:name="UMENG_MESSAGE_SECRET"
             android:value="20648810536264b42810627f01185cab" >
         </meta-data>
-        <meta-data android:value="update" android:name="UMENG_CHANNEL"/>
+        <meta-data android:value="xiaomi_2.0" android:name="UMENG_CHANNEL"/>
         <activity android:name=".view.activity.LaunchActivity"
             android:theme="@style/LaunchTheme"
             >
@@ -68,8 +68,6 @@
             android:name=".view.activity.MainActivity"
             android:label="@string/app_name"
              >
-        </activity>
-        <activity android:name=".advertise.AdvertiseActivity">
         </activity>
         <activity android:name=".view.activity.SearchActivity"/>
         <activity android:name=".view.activity.ShowLargeImgActivity"/>
@@ -248,7 +246,7 @@
         <service android:name="com.umeng.message.local.UmengLocalNotificationService"
             android:exported="false" />
 
-        <!--youmi wall  -->
+       <!-- youmi wall
         <activity
 android:name="net.youmi.android.AdBrowser"
 android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
@@ -268,7 +266,7 @@ android:name="net.youmi.android.AdReceiver" >
     <action android:name="android.intent.action.PACKAGE_ADDED" />
     <data android:scheme="package" />
 </intent-filter>
-</receiver>
+</receiver>-->
      <!--   &lt;!&ndash; 添加有米必须的组件 &ndash;&gt;
 
         <activity

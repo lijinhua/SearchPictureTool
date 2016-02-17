@@ -13,7 +13,7 @@ import com.jude.rollviewpager.RollPagerView;
 
 
 /**
- * Created by Administrator on 2016/2/5 0005.
+ * Created by wenhuaijun on 2016/2/5 0005.
  */
 
 @RequiresPresenter(MainFragmentPresenter.class)

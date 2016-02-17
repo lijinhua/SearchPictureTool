@@ -30,7 +30,7 @@ import butterknife.InjectView;
 
 
 /**
- * Created by Administrator on 2015/11/4 0004.
+ * Created by wenhuaijun on 2015/11/4 0004.
  */
 @RequiresPresenter(ShowLargeImgActivityPresenter.class)
 public class ShowLargeImgActivity extends BeamBaseActivity<ShowLargeImgActivityPresenter> implements OnMenuItemClickListener,

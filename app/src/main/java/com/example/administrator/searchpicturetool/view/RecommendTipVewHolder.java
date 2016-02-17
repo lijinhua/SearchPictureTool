@@ -13,7 +13,7 @@ import com.example.administrator.searchpicturetool.view.activity.SearchActivity;
 import com.jude.easyrecyclerview.adapter.BaseViewHolder;
 
 /**
- * Created by Administrator on 2016/2/6 0006.
+ * Created by wenhuaijun on 2016/2/6 0006.
  */
 public class RecommendTipVewHolder extends BaseViewHolder<RecommendTip> implements View.OnClickListener {
     private TextView tip;

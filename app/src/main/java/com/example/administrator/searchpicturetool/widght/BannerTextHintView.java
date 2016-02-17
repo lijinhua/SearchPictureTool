@@ -8,7 +8,7 @@ import com.jude.rollviewpager.hintview.TextHintView;
 import java.util.List;
 
 /**
- * Created by Administrator on 2016/2/15 0015.
+ * Created by wenhuaijun on 2016/2/15 0015.
  */
 public class BannerTextHintView extends TextHintView{
     List<Banner> banners;

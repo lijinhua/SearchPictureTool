@@ -14,7 +14,7 @@ import rx.functions.Func1;
 import rx.schedulers.Schedulers;
 
 /**
- * Created by Administrator on 2016/2/13 0013.
+ * Created by wenhuaijun on 2016/2/13 0013.
  */
 public class ImageJoyModel {
     public static Observable<ArrayList<ImageJoy>> getImageJoys(){

@@ -30,7 +30,7 @@ import java.util.ArrayList;
 import rx.functions.Action1;
 
 /**
- * Created by Administrator on 2015/11/4 0004.
+ * Created by wenhuaijun on 2015/11/4 0004.
  */
 public class ShowLargeImgActivityPresenter extends Presenter<ShowLargeImgActivity> implements ViewPager.OnPageChangeListener{
     private NetImage netImage;

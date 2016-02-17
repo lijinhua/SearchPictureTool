@@ -5,7 +5,7 @@ import com.example.administrator.searchpicturetool.model.bean.DownloadImg;
 import java.util.ArrayList;
 
 /**
- * Created by Administrator on 2016/2/1 0001.
+ * Created by wenhuaijun on 2016/2/1 0001.
  * 用于图片被选中模式
  */
 public class DownloadImgSelected {

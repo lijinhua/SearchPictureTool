@@ -25,7 +25,7 @@ import rx.functions.Func1;
 import rx.schedulers.Schedulers;
 
 /**
- * Created by Administrator on 2016/1/22 0022.
+ * Created by wenhuaijun on 2016/1/22 0022.
  */
 public class SaveBitmapModel {
     /*public static void downloadBitmap( Context context, String url) {

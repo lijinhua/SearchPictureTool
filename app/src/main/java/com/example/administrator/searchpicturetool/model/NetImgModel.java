@@ -5,7 +5,7 @@ import com.jude.http.RequestListener;
 import com.jude.http.RequestManager;
 
 /**
- * Created by Administrator on 2015/11/2 0002.
+ * Created by wenhuaijun on 2015/11/2 0002.
  */
 @Deprecated
 public class NetImgModel {

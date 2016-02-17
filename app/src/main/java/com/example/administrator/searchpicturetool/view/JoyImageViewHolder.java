@@ -29,7 +29,7 @@ import com.jude.utils.JUtils;
 import rx.functions.Action1;
 
 /**
- * Created by Administrator on 2016/2/13 0013.
+ * Created by wenhuaijun on 2016/2/13 0013.
  */
 public class JoyImageViewHolder extends BaseViewHolder<ImageJoy> implements View.OnClickListener{
     private SimpleDraweeView simpleDraweeView;

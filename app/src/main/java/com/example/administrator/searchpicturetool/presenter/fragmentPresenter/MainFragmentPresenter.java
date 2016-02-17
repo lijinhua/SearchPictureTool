@@ -27,7 +27,7 @@ import java.util.HashMap;
 import rx.Subscriber;
 
 /**
- * Created by Administrator on 2016/2/5 0005.
+ * Created by wenhuaijun on 2016/2/5 0005.
  */
 public class MainFragmentPresenter extends Presenter<MainFragment> implements SwipeRefreshLayout.OnRefreshListener{
     private RecommendAdapter adapter;

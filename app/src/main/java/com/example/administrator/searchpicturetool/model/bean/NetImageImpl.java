@@ -1,7 +1,7 @@
 package com.example.administrator.searchpicturetool.model.bean;
 
 /**
- * Created by Administrator on 2016/1/31 0031.
+ * Created by wenhuaijun on 2016/1/31 0031.
  */
 public class NetImageImpl extends NetImage{
     private String thumbUrl;

@@ -22,7 +22,7 @@ import java.io.IOException;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 /**
- * Created by Administrator on 2015/11/7 0007.
+ * Created by wenhuaijun on 2015/11/7 0007.
  */
 @Deprecated
 public class TheOldSaveBitmapModel {

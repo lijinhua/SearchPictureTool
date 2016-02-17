@@ -19,7 +19,7 @@ import rx.Observer;
 import rx.Subscriber;
 
 /**
- * Created by Administrator on 2015/11/2 0002.
+ * Created by wenhuaijun on 2015/11/2 0002.
  */
 
 public class NetImgListPresenter extends BeamListFragmentPresenter<NetImgFragment,NetImage> implements RecyclerArrayAdapter.OnItemClickListener{

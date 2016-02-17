@@ -4,7 +4,7 @@ import com.example.administrator.searchpicturetool.view.activity.SettingActivity
 import com.jude.beam.bijection.Presenter;
 
 /**
- * Created by Administrator on 2015/11/14 0014.
+ * Created by wenhuaijun on 2015/11/14 0014.
  */
 public class SettingPresenter extends Presenter<SettingActivity> {
 }

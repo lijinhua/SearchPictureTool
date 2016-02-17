@@ -3,7 +3,7 @@ package com.example.administrator.searchpicturetool.model.bean;
 import cn.bmob.v3.BmobObject;
 
 /**
- * Created by Administrator on 2016/2/7 0007.
+ * Created by wenhuaijun on 2016/2/7 0007.
  */
 public class RecommendTip extends BmobObject{
     private double type;

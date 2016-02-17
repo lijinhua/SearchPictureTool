@@ -16,7 +16,7 @@ import com.jude.utils.JUtils;
 import java.io.File;
 
 /**
- * Created by Administrator on 2015/11/12 0012.
+ * Created by wenhuaijun on 2015/11/12 0012.
  */
 public class DownloadImgViewHolder extends BaseViewHolder<DownloadImg>{
     SimpleDraweeView image;

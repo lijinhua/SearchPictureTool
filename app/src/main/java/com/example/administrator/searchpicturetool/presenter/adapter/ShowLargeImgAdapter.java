@@ -15,7 +15,7 @@ import com.jude.utils.JUtils;
 import java.util.ArrayList;
 
 /**
- * Created by Administrator on 2015/11/8 0008.
+ * Created by wenhuaijun on 2015/11/8 0008.
  */
 public  class ShowLargeImgAdapter extends PagerAdapter {
     private SimpleDraweeView simpleDraweeView;

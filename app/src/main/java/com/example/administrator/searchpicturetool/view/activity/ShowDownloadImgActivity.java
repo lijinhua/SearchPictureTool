@@ -30,7 +30,7 @@ import butterknife.ButterKnife;
 import butterknife.InjectView;
 
 /**
- * Created by Administrator on 2015/11/13 0013.
+ * Created by wenhuaijun on 2015/11/13 0013.
  */
 @RequiresPresenter(ShowDownlargeImgPresenter.class)
 public class ShowDownloadImgActivity extends BeamBaseActivity<ShowDownlargeImgPresenter> implements OnMenuItemClickListener {

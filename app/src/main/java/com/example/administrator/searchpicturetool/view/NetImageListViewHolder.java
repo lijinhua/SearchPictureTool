@@ -9,7 +9,7 @@ import com.jude.easyrecyclerview.adapter.BaseViewHolder;
 import com.jude.utils.JUtils;
 
 /**
- * Created by Administrator on 2015/11/3 0003.
+ * Created by wenhuaijun on 2015/11/3 0003.
  */
 public class NetImageListViewHolder extends BaseViewHolder<NetImage>{
     SimpleDraweeView image;

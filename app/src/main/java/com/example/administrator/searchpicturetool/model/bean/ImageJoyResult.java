@@ -1,6 +1,6 @@
 package com.example.administrator.searchpicturetool.model.bean;
 
-
+@Deprecated
 public class ImageJoyResult {
    ImageJoy[] result;
 

@@ -15,7 +15,7 @@ import rx.functions.Func1;
 import rx.schedulers.Schedulers;
 
 /**
- * Created by Administrator on 2016/1/31 0031.
+ * Created by wenhuaijun on 2016/1/31 0031.
  */
 public class SqlModel {
     //存下载图片信息到数据库

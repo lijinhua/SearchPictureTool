@@ -1,7 +1,7 @@
 package com.example.administrator.searchpicturetool.config;
 
 /**
- * Created by Administrator on 2016/1/31 0031.
+ * Created by wenhuaijun on 2016/1/31 0031.
  */
 public class MySql {
         public static final String DATABASE_NAME = "searchPicture.db";

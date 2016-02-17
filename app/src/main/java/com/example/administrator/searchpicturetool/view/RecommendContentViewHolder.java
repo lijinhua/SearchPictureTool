@@ -15,7 +15,7 @@ import com.facebook.drawee.view.SimpleDraweeView;
 import com.jude.easyrecyclerview.adapter.BaseViewHolder;
 
 /**
- * Created by Administrator on 2016/2/7 0007.
+ * Created by wenhuaijun on 2016/2/7 0007.
  */
 public class RecommendContentViewHolder extends BaseViewHolder<RecommendContent> implements View.OnClickListener {
     private SimpleDraweeView simpleDraweeView1;

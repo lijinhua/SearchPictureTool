@@ -7,7 +7,7 @@ import com.example.administrator.searchpicturetool.app.APP;
 import java.io.File;
 
 /**
- * Created by Administrator on 2015/11/7 0007.
+ * Created by wenhuaijun on 2015/11/7 0007.
  */
 public class Utils {
     public static String getSDPath(){

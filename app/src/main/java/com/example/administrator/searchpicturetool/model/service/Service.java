@@ -11,7 +11,7 @@ import retrofit2.http.Query;
 import rx.Observable;
 
 /**
- * Created by Administrator on 2016/1/25 0025.
+ * Created by wenhuaijun on 2016/1/25 0025.
  * 服务器接口
  */
 

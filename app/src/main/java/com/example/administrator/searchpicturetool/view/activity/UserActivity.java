@@ -22,7 +22,7 @@ import butterknife.InjectView;
 import butterknife.OnClick;
 
 /**
- * Created by Administrator on 2015/11/12 0012.
+ * Created by wenhuaijun on 2015/11/12 0012.
  */
 @RequiresPresenter(UserActivityPresenter.class)
 public class UserActivity extends BeamBaseActivity<UserActivityPresenter> implements ViewPager.OnPageChangeListener{

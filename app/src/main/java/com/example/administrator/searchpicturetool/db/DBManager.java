@@ -13,7 +13,7 @@ import java.io.File;
 import java.util.ArrayList;
 
 /**
- * Created by Administrator on 2016/1/31 0031.
+ * Created by wenhuaijun on 2016/1/31 0031.
  */
 public class DBManager {
     private DBHelper helper;

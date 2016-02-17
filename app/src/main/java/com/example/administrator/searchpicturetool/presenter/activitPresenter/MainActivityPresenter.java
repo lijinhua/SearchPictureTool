@@ -16,7 +16,7 @@ import com.jude.beam.bijection.Presenter;
 import com.jude.beam.expansion.list.BeamListFragment;
 
 /**
- * Created by Administrator on 2015/11/2 0002.
+ * Created by wenhuaijun on 2015/11/2 0002.
  */
 public class MainActivityPresenter extends Presenter<MainActivity>{
     MyPagerAdapter adapter;

@@ -18,7 +18,7 @@ import com.umeng.socialize.weixin.media.CircleShareContent;
 import com.umeng.socialize.weixin.media.WeiXinShareContent;
 
 /**
- * Created by Administrator on 2015/11/10 0010.
+ * Created by wenhuaijun on 2015/11/10 0010.
  */
 public class ShareConfig {
     Context context;

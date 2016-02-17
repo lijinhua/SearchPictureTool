@@ -6,7 +6,7 @@ import com.example.administrator.searchpicturetool.model.bean.NetImage;
 import java.util.ArrayList;
 
 /**
- * Created by Administrator on 2016/2/2 0002.
+ * Created by wenhuaijun on 2016/2/2 0002.
  * 用于图片被选中模式
  */
 public class CollectImgSelected {

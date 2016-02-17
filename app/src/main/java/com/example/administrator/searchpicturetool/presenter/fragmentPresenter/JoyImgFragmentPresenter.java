@@ -10,7 +10,7 @@ import java.util.ArrayList;
 import rx.Subscriber;
 
 /**
- * Created by Administrator on 2016/2/13 0013.
+ * Created by wenhuaijun on 2016/2/13 0013.
  */
 public class JoyImgFragmentPresenter extends BeamListFragmentPresenter<JoyImgFragment,ImageJoy>{
     @Override

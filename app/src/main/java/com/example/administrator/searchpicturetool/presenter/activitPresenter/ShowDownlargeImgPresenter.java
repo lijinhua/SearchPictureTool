@@ -21,7 +21,7 @@ import java.lang.reflect.Method;
 import java.util.ArrayList;
 
 /**
- * Created by Administrator on 2015/11/13 0013.
+ * Created by wenhuaijun on 2015/11/13 0013.
  */
 public class ShowDownlargeImgPresenter extends Presenter<ShowDownloadImgActivity> implements ViewPager.OnPageChangeListener{
     int currentPosition=0;

@@ -17,7 +17,7 @@ import rx.Observer;
 import rx.Subscriber;
 
 /**
- * Created by Administrator on 2015/11/3 0003.
+ * Created by wenhuaijun on 2015/11/3 0003.
  */
 public class SerachFragmentListPresenter extends BeamListFragmentPresenter<SearchFragment,NetImage> implements RecyclerArrayAdapter.OnItemClickListener{
 

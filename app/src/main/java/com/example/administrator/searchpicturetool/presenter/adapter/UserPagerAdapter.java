@@ -12,7 +12,7 @@ import com.example.administrator.searchpicturetool.view.fragment.NetImgFragment;
 import java.util.HashMap;
 
 /**
- * Created by Administrator on 2015/11/12 0012.
+ * Created by wenhuaijun on 2015/11/12 0012.
  */
 public class UserPagerAdapter extends FragmentPagerAdapter{
     private DownloadFragment downloadFragment;

@@ -26,7 +26,7 @@ import java.util.List;
 import rx.Subscriber;
 
 /**
- * Created by Administrator on 2016/2/9 0009.
+ * Created by wenhuaijun on 2016/2/9 0009.
  */
 public class RollViewPagerItemView implements RecyclerArrayAdapter.ItemView, View.OnClickListener {
     RollPagerView rollPagerView;

@@ -10,7 +10,7 @@ import java.net.URLEncoder;
 import java.util.HashMap;
 
 /**
- * Created by Mr.Jude on 2015/2/23.
+ * Created by wenhuaijun on 2015/2/23.
  */
 public class SosoSearcher implements SearcherConstructor {
     @Override

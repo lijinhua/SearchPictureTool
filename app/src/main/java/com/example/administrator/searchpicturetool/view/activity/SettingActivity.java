@@ -16,7 +16,7 @@ import butterknife.ButterKnife;
 import butterknife.OnClick;
 
 /**
- * Created by Administrator on 2015/11/14 0014.
+ * Created by wenhuaijun on 2015/11/14 0014.
  */
 @RequiresPresenter(SettingPresenter.class)
 public class SettingActivity extends BeamBaseActivity<SettingPresenter>{

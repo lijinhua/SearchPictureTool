@@ -8,7 +8,7 @@ import rx.functions.Func1;
 import rx.schedulers.Schedulers;
 
 /**
- * Created by Administrator on 2016/1/25 0025.
+ * Created by wenhuaijun on 2016/1/25 0025.
  */
 public class GetImagelistModel {
     public static Observable<NetImage[]> getImageList( final String word,final int page){

@@ -3,7 +3,7 @@ package com.example.administrator.searchpicturetool.model.bean;
 import java.io.Serializable;
 
 /**
- * Created by Administrator on 2016/1/31 0031.
+ * Created by wenhuaijun on 2016/1/31 0031.
  */
 public class DownloadImg implements Serializable{
     //本地文件名

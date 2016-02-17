@@ -12,7 +12,7 @@ import com.jude.utils.JUtils;
 import rx.functions.Action1;
 
 /**
- * Created by Administrator on 2015/11/12 0012.
+ * Created by wenhuaijun on 2015/11/12 0012.
  */
 public class UserActivityPresenter extends Presenter<UserActivity> {
     public UserPagerAdapter userPagerAdapter;

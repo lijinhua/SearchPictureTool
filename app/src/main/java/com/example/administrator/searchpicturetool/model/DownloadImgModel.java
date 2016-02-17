@@ -13,7 +13,7 @@ import rx.functions.Func1;
 import rx.schedulers.Schedulers;
 
 /**
- * Created by Administrator on 2015/11/12 0012.
+ * Created by wenhuaijun on 2015/11/12 0012.
  * 该Model已废除，已改用从数据库获取已下载的图片文件信息
  */
 

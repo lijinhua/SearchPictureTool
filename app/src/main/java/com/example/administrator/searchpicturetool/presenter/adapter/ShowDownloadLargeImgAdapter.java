@@ -19,7 +19,7 @@ import java.io.File;
 import java.util.ArrayList;
 
 /**
- * Created by Administrator on 2015/11/13 0013.
+ * Created by wenhuaijun on 2015/11/13 0013.
  */
 public class ShowDownloadLargeImgAdapter extends PagerAdapter{
     private View view;

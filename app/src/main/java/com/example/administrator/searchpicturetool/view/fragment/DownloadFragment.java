@@ -14,7 +14,7 @@ import com.jude.easyrecyclerview.adapter.BaseViewHolder;
 import java.io.File;
 
 /**
- * Created by Administrator on 2015/11/1 0001.
+ * Created by wenhuaijun on 2015/11/1 0001.
  */
 @RequiresPresenter(DownloadListPresenter.class)
 public class DownloadFragment extends BeamListFragment<DownloadListPresenter,DownloadImg>{

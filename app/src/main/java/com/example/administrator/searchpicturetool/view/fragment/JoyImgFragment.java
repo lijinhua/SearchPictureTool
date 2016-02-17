@@ -12,7 +12,7 @@ import com.jude.beam.expansion.list.ListConfig;
 import com.jude.easyrecyclerview.adapter.BaseViewHolder;
 
 /**
- * Created by Administrator on 2016/2/13 0013.
+ * Created by wenhuaijun on 2016/2/13 0013.
  */
 @RequiresPresenter(JoyImgFragmentPresenter.class)
 public class JoyImgFragment extends BeamListFragment<JoyImgFragmentPresenter,ImageJoy>{

@@ -17,7 +17,7 @@ import rx.Observable;
 import rx.Subscriber;
 
 /**
- * Created by Administrator on 2016/2/12 0012.
+ * Created by wenhuaijun on 2016/2/12 0012.
  * 目前给推荐列表提供测试数据
  */
 public class RecommendModel {

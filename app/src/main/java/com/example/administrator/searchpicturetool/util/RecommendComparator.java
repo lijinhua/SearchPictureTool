@@ -6,7 +6,7 @@ import com.example.administrator.searchpicturetool.model.bean.RecommendTip;
 import java.util.Comparator;
 
 /**
- * Created by Administrator on 2016/2/12 0012.
+ * Created by wenhuaijun on 2016/2/12 0012.
  */
 public class RecommendComparator implements Comparator {
     RecommendTip tip1;

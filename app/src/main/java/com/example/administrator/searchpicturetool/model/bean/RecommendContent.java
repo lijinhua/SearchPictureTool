@@ -1,7 +1,7 @@
 package com.example.administrator.searchpicturetool.model.bean;
 
 /**
- * Created by Administrator on 2016/2/7 0007.
+ * Created by wenhuaijun on 2016/2/7 0007.
  */
 public class RecommendContent extends RecommendTip{
     private String imgUrl1;

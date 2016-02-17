@@ -17,7 +17,7 @@ import com.jude.beam.expansion.list.BeamListFragment;
 import java.util.HashMap;
 
 /**
- * Created by Administrator on 2015/11/2 0002.
+ * Created by wenhuaijun on 2015/11/2 0002.
  */
 public class MyPagerAdapter extends FragmentPagerAdapter {
     private HashMap<String,Fragment> fragments;

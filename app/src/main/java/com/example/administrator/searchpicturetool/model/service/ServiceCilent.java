@@ -9,7 +9,7 @@ import retrofit2.Retrofit;
 import retrofit2.RxJavaCallAdapterFactory;
 
 /**
- * Created by Administrator on 2016/1/25 0025.
+ * Created by wenhuaijun on 2016/1/25 0025.
  * 服务器连接客户端
  */
 public class ServiceCilent {

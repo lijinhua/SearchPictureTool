@@ -8,7 +8,7 @@ import com.example.administrator.searchpicturetool.config.MySql;
 import com.jude.utils.JUtils;
 
 /**
- * Created by Administrator on 2016/1/31 0031.
+ * Created by wenhuaijun on 2016/1/31 0031.
  */
 public class DBHelper extends SQLiteOpenHelper{
     public DBHelper(Context context) {

@@ -11,7 +11,7 @@ import com.jude.beam.expansion.list.ListConfig;
 import com.jude.easyrecyclerview.adapter.BaseViewHolder;
 
 /**
- * Created by Administrator on 2015/11/3 0003.
+ * Created by wenhuaijun on 2015/11/3 0003.
  */
 @RequiresPresenter(SerachFragmentListPresenter.class)
 public class SearchFragment extends BeamListFragment<SerachFragmentListPresenter,NetImage> {

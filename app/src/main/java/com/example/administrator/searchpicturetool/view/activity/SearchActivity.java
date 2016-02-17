@@ -21,7 +21,7 @@ import butterknife.InjectView;
 import butterknife.OnClick;
 
 /**
- * Created by Administrator on 2015/11/3 0003.
+ * Created by wenhuaijun on 2015/11/3 0003.
  */
     @RequiresPresenter(SearchActivityPresenter.class)
 public class SearchActivity extends BeamBaseActivity<SearchActivityPresenter>{

@@ -10,7 +10,7 @@ import com.umeng.analytics.MobclickAgent;
 import com.umeng.message.PushAgent;
 
 /**
- * Created by Administrator on 2015/11/10 0010.
+ * Created by wenhuaijun on 2015/11/10 0010.
  */
 public class ActivityDelegate extends ActivityLifeCycleDelegate{
     public ActivityDelegate(Activity act) {

@@ -19,7 +19,7 @@ import java.util.List;
 import rx.functions.Action1;
 
 /**
- * Created by Administrator on 2015/11/12 0012.
+ * Created by wenhuaijun on 2015/11/12 0012.
  */
 
 public class DownloadListPresenter extends BeamListFragmentPresenter<DownloadFragment,DownloadImg> implements RecyclerArrayAdapter.OnItemClickListener{
