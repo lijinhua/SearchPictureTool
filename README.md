@@ -17,6 +17,8 @@ Material Design风格，热门推荐、每日一笑、板块分类、一键下�
 ![9](https://github.com/wenhuaijun/SearchPictureTool/blob/master/introduce/intro9.jpg "")
 
 #下载地址
+Google Play市场：https://play.google.com/store/apps/details?id=com.whj.jun.searchpicturetool
+
 应用宝市场：http://android.myapp.com/myapp/detail.htm?apkName=com.example.administrator.searchpicturetool
 
 豌豆荚市场：http://www.wandoujia.com/apps/com.example.administrator.searchpicturetool
