@@ -46,4 +46,4 @@ Material Design风格，热门推荐、每日一笑、板块分类、一键下�
 
 Copyright 2016 wenhuaijun
 
-###该开源项目遵循GPL v3 开源协议。如需商业用途请联系我
+###该开源项目遵循GPL v3 开源协议。
