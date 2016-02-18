@@ -17,7 +17,6 @@ Material Design风格，热门推荐、每日一笑、板块分类、一键下�
 ![9](https://github.com/wenhuaijun/SearchPictureTool/blob/master/introduce/intro9.jpg "")
 
 #下载地址
-Google Play市场：https://play.google.com/store/apps/details?id=com.whj.jun.searchpicturetool
 
 应用宝市场：http://android.myapp.com/myapp/detail.htm?apkName=com.example.administrator.searchpicturetool
 
@@ -47,14 +46,4 @@ Google Play市场：https://play.google.com/store/apps/details?id=com.whj.jun.se
 
 Copyright 2016 wenhuaijun
 
-Licensed under the Apache License, Version 2.0 (the "License");
-you may not use this file except in compliance with the License.
-You may obtain a copy of the License at
-
-   http://www.apache.org/licenses/LICENSE-2.0
-
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS,
-WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-See the License for the specific language governing permissions and
-limitations under the License.
+###该开源项目遵循GPL v3 开源协议。如需商业用途请联系我
